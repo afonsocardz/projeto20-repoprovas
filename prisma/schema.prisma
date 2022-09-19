@@ -17,6 +17,15 @@ model User {
   @@map("users")
 }
 
+model Test {
+  id Int @id @default(autoincrement())
+  name String
+  pdfUrl String
+  categoryId Int
+  teacherDisciplineId Int
+  @@map("tests")
+}
+
 model Category {
   id Int @id @default(autoincrement())
   name String @unique
