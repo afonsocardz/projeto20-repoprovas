@@ -26,4 +26,11 @@ model Category {
 model Teacher {
   id Int @id @default(autoincrement())
   name String @unique
+  @@map("teachers")
+}
+
+model Term{
+  id Int @id @default(autoincrement())
+  number Int @unique
+  @@map("terms")
 }
