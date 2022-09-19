@@ -41,3 +41,10 @@ model Discipline {
   termId Int 
   @@map("disciplines")
 }
+
+model TeacherDiscipline {
+  id Int @id @default(autoincrement())
+  teacherId Int
+  disciplineId Int
+  @@map("teacher_disciplines")
+}
