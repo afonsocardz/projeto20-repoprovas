@@ -20,4 +20,10 @@ model User {
 model Category {
   id Int @id @default(autoincrement())
   name String @unique
+  @@map("categories")
+}
+
+model Teacher {
+  id Int @id @default(autoincrement())
+  name String @unique
 }
