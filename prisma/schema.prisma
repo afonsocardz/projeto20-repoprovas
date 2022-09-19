@@ -34,3 +34,10 @@ model Term{
   number Int @unique
   @@map("terms")
 }
+
+model Discipline {
+  id Int @id @default(autoincrement())
+  name String @unique
+  termId Int 
+  @@map("disciplines")
+}
